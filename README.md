@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+# Gra kamień papier nożyce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Secyfikacja
+ Dane: 
+ <ul>
+    <li>GameReducerAction - stany reducera</li>
+    <li>initialState - dane początkowe</li>
+    <li>ChoiseAction - możliwe wybory dla gracza</li>
+    <li>winOrLose - możliwe pozycje w których gracz wygrywa oraz przegrywa</li>
+    <li>playerChoise - stan wyboru gracza</li>
+    <li>aiChoise - stan wyboru ai</li>
+    <li>gameState - stan czy gracz wygrał czy też przegrał</li>
+    <li>isLoading - czekanie dokumentu na zakończenie animacji</li>
+ </ul>
 
-## Available Scripts
+## Lista kroków
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Zacznij algorytm.
+2. Oczekuj na wybór gracza (papier, kamień, nożyce).
+3. Po wybraniu odpowiedniego obiegu system uruchamia animację, podczas której
+AI wybiera swój wybór, a następnie porównuje wyniki względem tabelicy "winOrLose".
+4. Następnie system wykona 3 przypadki:
+    <ul>
+        <li>Jeśli w tablicy znajduje się przypadek win: Gracz, lose: AI system dopisze +1 do wyniku Gracza oraz wyświetli napis "Wygrałeś"</li>
+        <li>Jeśli w tablicy znajduje się przypadek lose: AI, win: Gracz system dopisze +1 do wyniku AI oraz wyświetli napis "Przegrałeś"</li>
+        <li>Jeśli żaden z przypadków się nie wykona system wypisze napis "Remis" i nie dopisze żadnej ze stron punktów</li>
+    </ul>
+5. System przez cały czas umożliwia użytkownikowi kliknięcie przycisku "Resetuj". Po jego wybraniu system zresetuje całą gre do stanu początkowego.

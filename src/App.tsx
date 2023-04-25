@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer } from 'react';
 
-function App() {
+import { Scoreboard } from './components/Scoreboard';
+import { Game } from './components/Game';
+
+import { initialState, GameReducer } from './reducer/GameReducer';
+
+const App:React.FC = () => {
+  const [state, dispatch] = useReducer(GameReducer, initialState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w-full h-screen flex justify-center items-center bg-primary text-secondary'>
+      <div className='bg-boardPanel w-3/4 text-center'>
+        <Scoreboard score={state.score} />
+        <Game state={state} dispatch={dispatch} />
+      </div>
     </div>
   );
 }
