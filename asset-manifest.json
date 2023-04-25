@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stone-paper-scissors/static/css/main.4d625f35.css",
+    "main.js": "/stone-paper-scissors/static/js/main.f4ae79db.js",
+    "static/js/787.a0dd4fe9.chunk.js": "/stone-paper-scissors/static/js/787.a0dd4fe9.chunk.js",
+    "index.html": "/stone-paper-scissors/index.html",
+    "main.4d625f35.css.map": "/stone-paper-scissors/static/css/main.4d625f35.css.map",
+    "main.f4ae79db.js.map": "/stone-paper-scissors/static/js/main.f4ae79db.js.map",
+    "787.a0dd4fe9.chunk.js.map": "/stone-paper-scissors/static/js/787.a0dd4fe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d625f35.css",
+    "static/js/main.f4ae79db.js"
+  ]
+}
