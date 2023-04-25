@@ -1,7 +1,7 @@
 # Gra kamień papier nożyce
 
 ## Demo
-![Link do demo](https://warzywko13.github.io/stone-paper-scissors/)
+[Link do demo](https://warzywko13.github.io/stone-paper-scissors/)
 
 ## Secyfikacja
  Dane: 
