@@ -26,3 +26,9 @@ AI wybiera swój wybór, a następnie porównuje wyniki względem tabelicy "winO
         <li>Jeśli żaden z przypadków się nie wykona system wypisze napis "Remis" i nie dopisze żadnej ze stron punktów</li>
     </ul>
 5. System przez cały czas umożliwia użytkownikowi kliknięcie przycisku "Resetuj". Po jego wybraniu system zresetuje całą gre do stanu początkowego.
+
+## Technologie
+<ul>
+    <li>Tailwind</li>
+    <li>React</li>
+</ul>
