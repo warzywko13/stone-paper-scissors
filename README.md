@@ -34,4 +34,5 @@ AI wybiera swój wybór, a następnie porównuje wyniki względem tabelicy "winO
 <ul>
     <li>Tailwind</li>
     <li>React</li>
+    <li>Typescript</li>
 </ul>
