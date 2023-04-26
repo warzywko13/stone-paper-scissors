@@ -18,6 +18,6 @@ export const Status:React.FC<IStatus> = ({ gameState }) => {
     }
 
     return (
-        <h1 className={`mb-20 text-4xl font-bold ${color}`}>{ gameState }</h1>
+        <h1 className={`mt-10 mb-10 md:mt-0 md:mb-20 text-4xl font-bold ${color}`}>{ gameState }</h1>
     );
 }

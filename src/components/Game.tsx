@@ -66,7 +66,7 @@ export const Game:React.FC<TGame> = ({ state, dispatch }) => {
     }
 
     return (
-        <div className='mt-3 mb-10 w-3/4 mx-auto flex flex-row justify-between items-center'>        
+        <div className='mt-3 mb-10 w-full mx-auto flex flex-col justify-between items-center md:flex-row md:w-11/12 xl:w-3/4'>        
             <Board 
                 isLoading={isLoading} 
                 player={'Gracz'} 
@@ -74,7 +74,7 @@ export const Game:React.FC<TGame> = ({ state, dispatch }) => {
                 handleChoise={handleChoise}  
             />
             
-            <div className='flex flex-col'>
+            <div className='flex flex-col justify-around'>
                 {gameState && <Status gameState={gameState} />}
 
                 <button 

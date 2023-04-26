@@ -9,8 +9,8 @@ const App:React.FC = () => {
   const [state, dispatch] = useReducer(GameReducer, initialState);
 
   return (
-    <div className='w-full h-screen flex justify-center items-center bg-primary text-secondary'>
-      <div className='bg-boardPanel w-3/4 text-center'>
+    <div className='w-full md:h-screen flex justify-center items-center bg-primary text-secondary'>
+      <div className='bg-boardPanel w-full text-center lg:w-3/4'>
         <Scoreboard score={state.score} />
         <Game state={state} dispatch={dispatch} />
       </div>

@@ -31,7 +31,7 @@ export const Board:React.FC<IBoard> = ({ isLoading, player, choice, handleChoise
             <div className='h-72 bg-slate-900 relative rounded-lg'>
                 <h2 className='text-2xl font-bold pt-2'>{player}</h2>
                 
-                <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-8xl'>
+                <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  text-8xl'>
                     {playerChoise?.icon}
                 </div>
             </div>
